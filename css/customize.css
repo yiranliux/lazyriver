@@ -1,0 +1,172 @@
+.headline{
+    text-align:center;
+    height:15%;
+    padding:10em 0 2em 0;
+    background-image:url('../graphics/washi.png');
+    border-bottom: 1px solid gainsboro;
+   width:100%;
+    clear: both;
+}
+
+.headline h1{
+    font-size:4em;
+    font-family: 'Sansita One', cursive;
+    color:#4F4F4F;
+}
+
+.tagline{
+    font-size: 2em;}
+
+.center-content{
+   
+    margin-left: auto;
+    margin-right: auto;
+    max-width:1724px;
+}
+
+#about, #life, #contact{
+    padding:60px 0;
+    margin:0;
+}
+
+
+
+#about h2, #life h2, #contact h2{
+    padding-left:45px;
+}
+
+#life{
+
+    margin:0;
+    background-color: #F2FCED;  
+
+}
+
+#life h3{
+    color:black;
+}
+
+#portfolio{
+    background-color:whitesmoke;
+    padding:2% 8.25%;
+    width:100%;
+}
+
+
+
+.section{
+    background-color:#d6effc;
+    color: dimgray;
+    padding:1%;
+
+}
+
+.chunk{
+    margin-top:20px;}
+
+.collapsible{
+    background-color: white;
+    height: 150px; /* Origional height */
+    transition:height 0.5s; /* Animation time */
+    -webkit-transition:height 0.5s; /* For Safari */
+    word-wrap:break-word;
+    overflow: hidden;
+    font-weight: lighter;
+}
+
+
+.paragraph{
+    background-color: white;
+    
+    padding: 2% 5%;
+    margin: 5px 5% 5px 5%;
+
+}
+
+.collapsible:hover{
+    height:400px;
+}
+
+.paragraph-title{
+    margin-bottom: 8%;
+}
+
+.indented{
+    margin: 5px 5% 5px 5%;
+}
+
+
+#resume{
+    width:65%;
+    float:left;
+}
+
+
+
+#timeline{
+
+
+}
+
+.download{
+    height:45px;
+}
+
+.download a {
+    padding:15px;
+    background-color:slateblue;
+    color:white;
+}
+
+
+
+.history{
+    font-weight: lighter;
+    float:left;
+}
+
+
+
+dl.history dt{
+    float:left;
+    font-weight: bold;
+}
+dl.history dd{
+    margin-left:3rem;
+
+}
+
+#about:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+#contact{
+background-color: white;}
+
+#footer{
+padding: 15%;
+text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    #resume, 
+    #timeline {
+        float: none;
+        width: 100%;
+    }
+    
+    .history{
+    width:100%;
+    }
+    .paragraph{
+        height: auto;}
+
+.collapsible{
+height:auto;}
+
+.collapsible:hover{
+height:auto;}
+    
+    }

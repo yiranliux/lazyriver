@@ -1,0 +1,104 @@
+/* ---- site nav ---- */
+
+#site-nav {
+ position: fixed;
+z-index: 10;
+top:0;
+width:100%;
+ border-bottom: solid 1px darkgray;
+ background-color:#6789BF;
+ padding:0 2.5%;
+}
+
+#site-nav,
+#site-nav h1 {
+  line-height: 60px;
+}
+
+
+/* clear fix */
+#site-nav:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+#site-nav h1 {
+
+  float:left;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#site-nav h1 a {
+  padding: 0 0.8em;
+  display: block;
+  color: white;
+}
+
+#site-nav h1 a:hover {
+  background: white;
+ 
+}
+
+
+#site-nav h2 {
+  float:left;
+  line-height:60px;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+}
+
+#site-nav h2 a {
+  padding: 0 0.8em;
+  display: block;
+  color:white;
+}
+
+
+#site-nav a {
+  background: none;
+}
+
+#site-nav ol {
+  list-style: none;
+  font-size: 1.25em;
+  margin-bottom: 0;
+}
+
+#site-nav ol:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+#site-nav ol{
+float:right; 
+}
+#site-nav li {
+  float: left;
+ 
+}
+
+#site-nav ol a {
+  display: block;
+  padding: 0 1.0em;
+color:white;
+    margin: 0 .1em;
+}
+
+#site-nav ol a:hover {
+  background: white;
+  color: #6789BF;
+}
+
+
+#site-nav .active{
+color:#6789BF;
+background-color: white;}
+
+
+
+
+
