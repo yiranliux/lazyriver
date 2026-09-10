@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>Elaine Yiran Li - AWS Transform</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900%7CMontserrat:400,700%7CPT+Serif' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/clear.css" />
+        <link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/carouFredSel.css" />
+        <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+        <link rel="stylesheet" type="text/css" href="css/sm-clean.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- awstransform page styles moved to css/common.css (.awstransform-page scope) -->
+    </head>
+
+    <body class="post single-post awstransform-page">
+        <table class="doc-loader">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="images/ajax-document-loader.gif" alt="Loading...">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="menu-wraper center-relative">
+            <div class="menu-logo center-text">
+                <nav id="header-main-menu" class="big-menu">
+                    <ul class="main-menu sm sm-clean">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="watercolor.html">Beyond UX</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="body-wrapper">
+            <div class="header-holder center-relative relative">
+                <div class="header-logo center-text">
+                    <a href="index.html">
+                        <h1>Elaine Yiran Li</h1>
+                    </a>
+                    <div class="toggle-holder absolute">
+                        <div id="toggle">
+                            <div class="first-menu-line"></div>
+                            <div class="second-menu-line"></div>
+                            <div class="third-menu-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div id="content" class="site-content center-relative">
+                <article>
+                    <h1 class="entry-title">grading optimization</h1>
+                    <p class="page-desc">Terrain Data Optimization</p>
+
+                    <div class="entry-content">
+                        <div class="content-wrap">
+
+                            <div class="content-block">
+                                <h2>Introduction</h2>
+                                <p>Preliminary terrain grading is an important stage in civil design to explore different options with project stakeholders, however just like any general grading workflow, preliminary grading involves editing of surfaces and feature lines, which can be tedious, time consuming and requires a lot of manual work.</p>
+                           
+                            </div>
+<!--
+                            <div class="content-block">
+                                <h2>Persona</h2>
+                                <div style="display: flex; gap: 20px; align-items: flex-start;">
+                                    <div class="image-hover-container" onclick="openLightbox('awstransform/persona1.png')" style="width: 48%;">
+                                        <img src="awstransform/persona1.png" alt="Persona 1" />
+                                        <div class="image-hover-overlay">Open</div>
+                                    </div>
+                                    <div class="image-hover-container" onclick="openLightbox('awstransform/persona2.png')" style="width: 48%;">
+                                        <img src="awstransform/persona2.png" alt="Persona 2" />
+                                        <div class="image-hover-overlay">Open</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            -->
+                        <div class="content-block">
+                                <h2>Goal</h2>
+                                <p>Walk through the terrain grading steps in a more automated fashion: Define problem areas, setup constraints, evaluate results, determine the optimal results.</p>
+                                <p>The optimization tool can get data from existing condition easily. Results of preliminary grading can be continuously worked on for finer and more detailed grading.</p>
+                                <div class="first-buildout-row">
+ <div class="image-hover-container" onclick="openLightbox('gradingoptimization/go2.png')" style="width:100%;">
+                                        <img src="gradingoptimization/go2.png" alt="Exploration" />
+                                        <div class="image-hover-overlay">Open</div>
+                                    </div>
+                                </div>
+                                </div>
+                     <div class="content-block">
+                                <h2>Data architecture</h2>
+                                <p>Grading Optimization is a product working with other design software in the company, data is exchanged between the design tools and this optimization platform. Diagrams are produced to illustrate the data flow between different tools, how certain data are reshaped after the optimization, and how might we indicate those changes.</p>
+                                
+                                <div class="first-buildout-row">
+                                    <div class="image-hover-container" onclick="openLightbox('gradingoptimization/dataexchange.png')" style="width:100%;">
+                                        <img src="gradingoptimization/dataexchange.png" alt="Data architecture" />
+                                        <div class="image-hover-overlay">Open</div>
+                                    </div>
+                                  
+                                </div>
+                                </div>
+                        
+
+                              <div class="content-block">
+                                <h2>Wireframe exploration</h2>
+                                <p>Based on user tasks, skeletons of the design were created through wireframes.</p>
+                                
+                                <div class="first-buildout-row">
+                                    <div class="image-hover-container" onclick="openLightbox('gradingoptimization/wireframe.png')" style="width:100%;">
+                                        <img src="gradingoptimization/wireframe.png" alt="Exploration" />
+                                        <div class="image-hover-overlay">Open</div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+
+
+                        
+
+                            <div class="content-block">
+                                <h2>First buildout</h2>
+                                <p>The tool emerged from a research lab project, where the scientists were experimenting with algorithms to optimize preliminary grading cost and fill balance. The initial prototype was built to evaluate the results and there was no user experience consideration. 
+When prototype was presented to user for feedback, customers were impressed with the functionality and potential time saving aspect, but expressed confusion regarding the general workflow. 
+</p>
+            
+                                <div class="first-buildout-row">
+                                    
+                                </div>
+
+                                <p>I conducted usability study with 5 internal users and 10 customers. All research were conducted remotely. I summarized the research result and feed those to the product roadmap afterwards.</p>
+                          
+
+
+                            </div>
+
+                           
+
+                            <div class="content-block">
+                                <h2>The impatient learners </h2>
+                                <div class="issue-box problem">
+                                    <strong>Problems</strong>
+                                    <p>Customers are curious about how much time this tool can save. But many found they need assistance learning the new workflow. Customers are busy, they do not have very long time read through the user guide website.</p>
+                                   
+                                </div>
+                                <div class="issue-box solution">
+                                    <strong>Solution</strong>
+                                    <p>I brainstormed 6 different in product ideas such as help center, sample project, tutorial videos, interactive walkthrough. Surveyed with customer to identify their preference. The team proceeded with the help center idea that included instructions, tutorials and sample file. A close collaboration was built between content team and UX team, so content team can inject user guide info into the product.</p>
+                            
+                                </div>
+                                <div style="width: 100%;" >
+                                    
+                                  <div class="image-hover-container" onclick="openLightbox('gradingoptimization/helppane.png')" style="width: 100%;">
+                                        <img src="gradingoptimization/helppane.png" alt="layout" />
+                                        <div class="image-hover-overlay">Open</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                              <div class="content-block">
+                                <h2>The jargons </h2>
+                                <div class="issue-box problem">
+                                    <strong>Problem</strong>
+                                    <p>Many grading constraint inputs come from building codes and construction regulations. Even seasoned users may need help understand the terms and jargons. How would we help user understand what those terms mean?   </p>
+                                </div>
+                                <div class="issue-box solution">
+                                    <strong>Solution</strong>
+                                    <p>Provide user with illustration and annotations to explain the terms. </p>
+<p>Add explanation tips for deeper dives of the jargons in help panel. </p>
+                                </div>
+                                <div style="margin-top: 18px;">
+                                    <div class="image-hover-container" onclick="openLightbox('gradingoptimization/jargons.png')" style="width: 100%;">
+                                        <img src="gradingoptimization/jargons.png" alt="layout" />
+                                        <div class="image-hover-overlay">Open</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    
+
+                      
+
+                            <div class="content-block">
+                                <h2>Results and impacts</h2>
+                                <div class="image-hover-container" onclick="openLightbox('gradingoptimization/comparison.png', ['gradingoptimization/comparison.png', 'gradingoptimization/go3.png', 'gradingoptimization/go4.png'], 0)" style="width: 100%; cursor: pointer;">
+                                    <img src="gradingoptimization/comparison.png" alt="compare" style="width: 100%; margin-top: 20px; display: block;" />
+                                    <div class="image-hover-overlay">Open</div>
+                                </div>
+                                <div class="image-hover-container" onclick="openLightbox('gradingoptimization/impact.png')" style="width: 100%; cursor: pointer;">
+                                    <img src="gradingoptimization/impact.png" alt="impact" style="width: 100%; margin-top: 20px; display: block;" />
+                                    <div class="image-hover-overlay">Open</div>
+                                </div>
+                                <p><a href="https://youtu.be/TXN9PiIifrM?si=zonLVK_vvGWphT0l" target="_blank">Media Coverage</a></p>
+                            </div>
+
+                             
+
+                           
+                           
+                            
+
+                        </div>
+
+                        <div class="nav-previous">                        
+                        <a href="index.html">Back Home</a> 
+                        <p class="nav-previous-text">
+                            <img src="images/left.png" alt="Home">
+                        </p>
+                     </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+         
+
+        <footer class="footer">
+            <div class="content-970 center-relative">
+                <ul>
+                    <li class="copyright-footer">
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website design is inspired by <a href="https://colorlib.com" target="_blank">Colorlib</a> and made by Elaine Yiran Li
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()" style="display:none;">
+            <div class="lightbox-content">
+                <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+                <img id="lightbox-img" src="" alt="Enlarged view" />
+            </div>
+        </div>
+
+        <button id="collapse-all-button" class="collapse-all-button" type="button">Start over</button>
+
+        <script>
+            let currentImageIndex = 0;
+            let imageSet = [];
+
+            function openLightbox(imgSrc, imgSet = [], index = 0) {
+                console.log('openLightbox called', imgSrc, imgSet, index);
+                currentImageIndex = index;
+                imageSet = imgSet || [];
+                const lbImg = document.getElementById('lightbox-img');
+
+                if (imageSet.length > 0) {
+                    lbImg.onclick = function(e) {
+                        e.stopPropagation();
+                        currentImageIndex = (currentImageIndex + 1) % imageSet.length;
+                        lbImg.src = imageSet[currentImageIndex];
+                    };
+                } else {
+                    // Prevent clicks on the image from closing the overlay
+                    lbImg.onclick = function(e) { e.stopPropagation(); };
+                }
+
+                lbImg.src = imgSrc;
+                document.getElementById('lightbox').style.display = 'flex';
+            }
+
+            function closeLightbox() {
+                document.getElementById('lightbox').style.display = 'none';
+                const lbImg = document.getElementById('lightbox-img');
+                if (lbImg) lbImg.onclick = null;
+            }
+
+            function showNextImage() {
+                if (imageSet.length > 0) {
+                    currentImageIndex = (currentImageIndex + 1) % imageSet.length;
+                    document.getElementById('lightbox-img').src = imageSet[currentImageIndex];
+                }
+            }
+
+            function showPrevImage() {
+                if (imageSet.length > 0) {
+                    currentImageIndex = (currentImageIndex - 1 + imageSet.length) % imageSet.length;
+                    document.getElementById('lightbox-img').src = imageSet[currentImageIndex];
+                }
+            }
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                } else if (e.key === 'ArrowRight') {
+                    showNextImage();
+                } else if (e.key === 'ArrowLeft') {
+                    showPrevImage();
+                }
+            });
+        </script>
+
+        <script>
+            let currentGallery = [];
+            let currentGalleryIndex = 0;
+
+            function openLightbox(imgSrc, gallery = null, index = 0) {
+                console.log('openLightbox (gallery) called', imgSrc, gallery, index);
+                const lightboxImg = document.getElementById('lightbox-img');
+
+                if (gallery && gallery.length) {
+                    currentGallery = gallery;
+                    currentGalleryIndex = index;
+                    lightboxImg.onclick = function(e) {
+                        e.stopPropagation();
+                        if (currentGallery.length > 1) {
+                            currentGalleryIndex = (currentGalleryIndex + 1) % currentGallery.length;
+                            lightboxImg.src = currentGallery[currentGalleryIndex];
+                        }
+                    };
+                    lightboxImg.src = gallery[index];
+                } else {
+                    currentGallery = [];
+                    currentGalleryIndex = 0;
+                    // Prevent clicks on the image from closing the overlay
+                    lightboxImg.onclick = function(e) { e.stopPropagation(); };
+                    lightboxImg.src = imgSrc;
+                }
+
+                document.getElementById('lightbox').style.display = 'flex';
+            }
+
+            function closeLightbox() {
+                document.getElementById('lightbox').style.display = 'none';
+                document.getElementById('lightbox-img').onclick = null;
+                currentGallery = [];
+                currentGalleryIndex = 0;
+            }
+
+            function goToNextGalleryImage() {
+                if (currentGallery.length > 1) {
+                    currentGalleryIndex = (currentGalleryIndex + 1) % currentGallery.length;
+                    document.getElementById('lightbox-img').src = currentGallery[currentGalleryIndex];
+                }
+            }
+
+            function goToPrevGalleryImage() {
+                if (currentGallery.length > 1) {
+                    currentGalleryIndex = (currentGalleryIndex - 1 + currentGallery.length) % currentGallery.length;
+                    document.getElementById('lightbox-img').src = currentGallery[currentGalleryIndex];
+                }
+            }
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                } else if (document.getElementById('lightbox').style.display === 'flex') {
+                    if (e.key === 'ArrowRight') {
+                        goToNextGalleryImage();
+                    } else if (e.key === 'ArrowLeft') {
+                        goToPrevGalleryImage();
+                    }
+                }
+            });
+        </script>
+
+        <script>
+            (function() {
+                const blocks = document.querySelectorAll('.content-block');
+                const collapseAllButton = document.getElementById('collapse-all-button');
+                let lastScrollY = window.scrollY;
+                let userHasInteracted = false;
+
+                function setExpandedState(block, isExpanded) {
+                    const heading = block.querySelector('h2.expander-toggle');
+                    const content = block.querySelector('.expander-content');
+
+                    if (!heading || !content) return;
+
+                    block.classList.toggle('is-open', isExpanded);
+                    heading.setAttribute('aria-expanded', String(isExpanded));
+
+                    if (isExpanded) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        content.style.opacity = '1';
+                        content.style.transform = 'translateY(0)';
+                    } else {
+                        content.style.maxHeight = '0px';
+                        content.style.opacity = '0';
+                        content.style.transform = 'translateY(-8px)';
+                    }
+                }
+
+                blocks.forEach((block) => {
+                    const heading = block.querySelector('h2');
+                    if (!heading) return;
+
+                    const content = document.createElement('div');
+                    content.className = 'expander-content';
+
+                    const children = Array.from(block.childNodes).filter((node) => node !== heading);
+                    children.forEach((node) => content.appendChild(node));
+                    block.appendChild(content);
+
+                    heading.classList.add('expander-toggle');
+                    heading.setAttribute('tabindex', '0');
+                    heading.setAttribute('aria-expanded', 'false');
+
+                    heading.addEventListener('click', () => {
+                        userHasInteracted = true;
+                        const isExpanded = block.classList.contains('is-open');
+                        setExpandedState(block, !isExpanded);
+                    });
+
+                    heading.addEventListener('keydown', (event) => {
+                        if (event.key === 'Enter' || event.key === ' ') {
+                            event.preventDefault();
+                            userHasInteracted = true;
+                            heading.click();
+                        }
+                    });
+
+                    setExpandedState(block, false);
+                });
+
+                if (collapseAllButton) {
+                    collapseAllButton.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+
+                        blocks.forEach((block) => setExpandedState(block, false));
+                        userHasInteracted = false;
+                        collapseAllButton.blur();
+                        window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+                    });
+                }
+
+                let isInitialScroll = true;
+                window.addEventListener('scroll', () => {
+                    const currentScrollY = window.scrollY;
+                    const scrollingDown = currentScrollY > lastScrollY;
+                    lastScrollY = currentScrollY;
+
+                    if (isInitialScroll) {
+                        isInitialScroll = false;
+                        return;
+                    }
+
+                    if (!scrollingDown || userHasInteracted) {
+                        return;
+                    }
+
+                    blocks.forEach((block) => {
+                        const rect = block.getBoundingClientRect();
+                        if (rect.top < window.innerHeight * 0.75 && rect.bottom > 0) {
+                            setExpandedState(block, true);
+                        }
+                    });
+                }, { passive: true });
+
+                window.addEventListener('resize', () => {
+                    blocks.forEach((block) => {
+                        if (block.classList.contains('is-open')) {
+                            const content = block.querySelector('.expander-content');
+                            if (content) {
+                                content.style.maxHeight = content.scrollHeight + 'px';
+                            }
+                        }
+                    });
+                });
+            })();
+        </script>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.smartmenus.min.js"></script>
+        <script src="js/isotope.pkgd.js"></script>
+        <script src="js/imagesloaded.pkgd.js"></script>
+        <script src="js/jquery.carouFredSel-6.0.0-packed.js"></script>
+        <script src="js/jquery.mousewheel.min.js"></script>
+        <script src="js/jquery.touchSwipe.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
